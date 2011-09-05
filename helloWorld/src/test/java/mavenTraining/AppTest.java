@@ -31,8 +31,14 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testprintinfor()
     {
-        assertTrue( true );
+    	App app = new App();
+    	boolean status = app.printinfor("");
+    	assertFalse(status);
+    	
+    	status = app.printinfor("hello\n world!");
+    	assertTrue(status);
+    	
     }
 }
