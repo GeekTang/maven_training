@@ -1,0 +1,8 @@
+*.tar
+*.war
+build/classes
+*.class
+*.stale
+*.orig
+*~
+helloWorld\target
