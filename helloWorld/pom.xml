@@ -34,12 +34,12 @@
   </dependencies>
   <distributionManagement>
   	<repository>
-  		<id>mavenTest</id>
+  		<id>nexus-releases</id>
   		<name>Maven test</name>
   		<url>http://10.0.0.48:8081/nexus/content/repositories/releases/</url>
   	</repository>
   	<snapshotRepository>
-  		<id>mavenTest</id>
+  		<id>nexus-snapshots</id>
   		<name>Maven test</name>
   		<url>http://10.0.0.48:8081/nexus/content/repositories/snapshots/</url>
   	</snapshotRepository>
