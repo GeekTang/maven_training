@@ -3,3 +3,5 @@
 #-----------------------------------------------------------------
 
 #Bundle-Activator: ${bundle.namespace}.internal.ExampleActivator
+
+Service-Component: OSGI-INF/serviceComponents.xml

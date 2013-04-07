@@ -21,6 +21,14 @@ public final class ExampleActivator
         throws Exception
     {
         System.out.println( "STARTING org.example.simple" );
+
+        Dictionary props = new Properties();
+        // add specific service properties here...
+
+        System.out.println( "REGISTER " + ExampleService.class.getName());
+
+        // Register our example service implementation in the OSGi service registry
+        bc.registerService( ExampleService.class.getName(), new ExampleServiceImpl(), null );
     }
 
     /**

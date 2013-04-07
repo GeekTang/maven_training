@@ -21,7 +21,17 @@ public final class ExampleActivator implements BundleActivator {
 	public void start(BundleContext bc) throws Exception {
 		System.out.println("STARTING org.example.simple client!");
 
-		ExampleService example = null;
+		Dictionary props = new Properties();
+		// add specific service properties here...
+
+		System.out
+				.println("Try to use service " + ExampleService.class.getName());
+
+		exampleServiceTracker = new ServiceTracker(bc,
+				ExampleService.class.getName(), null);
+		exampleServiceTracker.open();
+		ExampleService example = (ExampleService) exampleServiceTracker
+				.getService();
 		if (example != null) {
 			String input = "123456789";
 			System.out.println("Reverse " + input + " ==>  "

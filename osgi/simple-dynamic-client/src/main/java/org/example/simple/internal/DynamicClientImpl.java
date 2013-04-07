@@ -16,6 +16,8 @@ public class DynamicClientImpl implements DynamicClient {
 	 */
 	public void start(ExampleService reverseService) {
 		System.out.println("Reverse service started !");
+		String input = "DY 121212";
+		System.out.println("Reverse " + input + " ==> " + reverseService.reverse(input));
 	}
 
 	/* (non-Javadoc)
@@ -23,6 +25,8 @@ public class DynamicClientImpl implements DynamicClient {
 	 */
 	public void stop(ExampleService reverseService) {
 		System.out.println("Reverse service stopped !");
+		String input = "STOP 121212";
+		System.out.println("Reverse " + input + " ==> " + reverseService.reverse(input));
 	}
 
 }
